@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
-  def index
-    
+  def home
+    @team_member = ["Abel", "Ced", "Bert", "Cris"]
   end
 
 end
