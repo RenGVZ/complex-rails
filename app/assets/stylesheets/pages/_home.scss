@@ -1,11 +1,16 @@
 // Specific CSS for your home-page
 .home-container {
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: asset_url("allef-vinicius-IvQeAVeJULw-unsplash.jpg");
   background-size: cover;
   height: 100vh;
   margin-top: -80px;
+}
+
+.tagline {
+  color: white;
 }
 
 
