@@ -2,7 +2,7 @@
   justify-content: space-between;
   background: transparent;
   h3 {
-    margin-top: 10px;
+    margin-top: 14px;
     font-weight: bold;
   }
 }
@@ -12,5 +12,46 @@
 }
 
 .navbar-complex .navbar-brand img {
-  width: 40px;
+  width: 50px;
+  height: 50px;
+}
+
+.navbar {
+  padding: 0.5rem 2rem;
+}
+
+.navbar-nav {
+  font-size: 25px;
+}
+
+.nav-item {
+  padding: 0 14px 0 14px;
+}
+
+#clock {
+  padding-right: 28px;
+}
+
+.dropdown {
+  border: black 2px solid;
+  a {
+    color: black;
+  }
+}
+
+// Mobile
+.navbar-toggler {
+  padding: 0.25rem 0;
+}
+
+.show {
+  border: none; 
+}
+
+.show .navbar-nav {
+  flex-direction: row-reverse;
+}
+
+.collapsing .navbar-nav {
+  flex-direction: row-reverse;
 }
