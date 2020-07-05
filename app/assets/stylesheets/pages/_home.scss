@@ -1,5 +1,5 @@
 // Specific CSS for your home-page
-.home-container {
+.home-landing {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,12 +11,48 @@
 
 .tagline {
   color: white;
+  text-align: center;
+}
+
+.home-products {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1),
+  rgba(0, 0, 0, 0.4)), asset_url("products.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.home-staff {
+  height: 100vh;
+  background-image: asset_url("staff.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.home-location {
+  height: 100vh;
+  background-image: asset_url("map.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
 }
 
 
 // Mobile 
 @media(max-width: 375px) {
-  .home-container {
+  .home-landing {
     height: 100vh;
     margin-top: 0;
     background-size: cover;
