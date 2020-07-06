@@ -11,7 +11,7 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 
-  height: -webkit-fill-available;
+  height: 400px;
   width: 390px;
 }
 
@@ -29,6 +29,12 @@
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
     grid-template-columns: 1fr;
+    left: 10%;
+  }
+  .card-category {
+    height: 200px;
+    width: 190px;
+    margin-left: 22%;
   }
 }
 
