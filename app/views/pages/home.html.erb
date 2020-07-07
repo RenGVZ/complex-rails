@@ -97,6 +97,10 @@
   </div>
 
   <div class="home-testamonials">
+    <% @barbers.each do |barber| %>
+      <%= cl_image_tag barber.photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+    
   
   </div>
 
