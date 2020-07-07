@@ -50,14 +50,22 @@
 }
 
 .home-staff {
-  height: 100vh;
+  height: 130vh;
   background-image: asset_url("staff.jpg");
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
+  h1 {
+    padding-top: 104px;
+    padding-bottom: 40px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 32px;
+    font-weight: bold;
+  }
 }
 
 .home-location {
