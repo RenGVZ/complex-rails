@@ -13,11 +13,109 @@
 
   height: 400px;
   width: 390px;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+// Social Icons
+
+.social-icons {
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+  
+  li {
+    list-style: none;
+    
+    a {
+      position: relative;
+      display: block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: #fff;
+      font-size: 23px;
+      color: #333;
+      font-weight: bold;
+      margin: 0 6px;
+      transition: .4s;
+      transform: translateY(200px);
+      opacity: 0;
+    } 
+  }
+}
+
+.card-category:hover .social-icons li a {
+  transform: translateY(0px);
+  opacity: 1; 
+}
+
+.social-icons li a:hover {
+  background: #000; 
+  transition: .2s;
+  .fab {
+    color: #fff;
+  } 
+}
+
+.social-icons li a .fab {
+  transition: .8s;
+    
+  &:hover {
+      transform: rotateY(360deg);
+      color: #fff;
+  } 
+}
+
+.card-category:hover li:nth-child(1) a {
+    transition-delay: 0.1s;
+}
+.card-category:hover li:nth-child(2) a {
+  transition-delay: 0.2s;
+}
+.card-category:hover li:nth-child(3) a {
+  transition-delay: 0.3s;
+}
+.card-category:hover li:nth-child(4) a {
+  transition-delay: 0.4s;
 }
 
 .card-hover {
-  box-shadow: 10px 10px 10px lightgrey;
-  
+  box-shadow: 0 14px 28px rgba(171, 169, 169, 0.824), 0 10px 10px rgba(0,0,0,0.22);
+  transform: translateY(-40px);
+  transition: all .9s;
+
+}
+
+// Personal details
+
+.details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.68);
+  width: 100%;
+  height: 120px;
+  z-index: 1;
+  padding: 10px;
+
+  h2 {
+    margin: 30px 0;
+    padding: 0;
+    text-align: center;
+     
+    .job-title {
+        font-size: 1rem;
+        line-height: 2.5rem;
+        color: #333;
+        font-weight: 300;
+    }
+  }
 }
 
 // Card grid
