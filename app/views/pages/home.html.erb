@@ -35,20 +35,38 @@
     <h1 class="tagline">Meet our team</h1>
     <div class="container">
       <div class="row">
-        <div class="cards">     
-          <div class="col card-category" id="team-member1">
-            <ul class="social-icons">
-              <li>
-                <a href="">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-            <div class="details">
-              <h2>Abel
-              </h2>
+        <div class="cards">   
+          <% @barbers.each do |barber| %>  
+            <div class="col card-category">
+              <%= cl_image_tag barber.photo.key, height: 400, width: 390, crop: :fill %>
+              <ul class="social-icons">
+                <li>
+                  <a href="<%= barber.instagram %>" target="blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="<%= barber.booksy %>" target="blank">
+                    <i class="fab booksy"> <%= cl_image_tag("booksy_uvyquh.png", width: 30, height: 30) %></i>
+
+                   
+                  </a>
+                </li>
+              </ul>
+              <div class="details">
+                <h2><%= barber.name %></h2>
+              </div>
             </div>
-          </div>
+          <% end %>
+
+      <!--
+          <% @barbers.each do |barber| %>
+            <%= cl_image_tag barber.photo.key, height: 300, width: 400, crop: :fill %>
+            <h1><%= link_to "Insta", barber.instagram, target: "blank"  %></h1>
+            <h2><%= barber.name %></h2>
+          <% end %>
+      -->
+          
 
           <div class="col card-category" id="team-member2">
             <ul class="social-icons">
@@ -97,9 +115,7 @@
   </div>
 
   <div class="home-testamonials">
-    <% @barbers.each do |barber| %>
-      <%= cl_image_tag barber.photo.key, height: 300, width: 400, crop: :fill %>
-    <% end %>
+    
     
   
   </div>

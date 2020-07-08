@@ -56,11 +56,7 @@
 }
 
 .social-icons li a:hover {
-  background: #000; 
   transition: .2s;
-  .fab {
-    color: #fff;
-  } 
 }
 
 .social-icons li a .fab {
@@ -68,7 +64,6 @@
     
   &:hover {
       transform: rotateY(360deg);
-      color: #fff;
   } 
 }
 
