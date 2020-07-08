@@ -49,6 +49,6 @@ barber = Barber.new(
     barber.photo.attach(io: file, filename: 'staff4.jpg', content_type: 'image/jpg') 
     barber.save!
 
-  puts 'barber 3 created'
+  puts 'barber 4 created'
 
   
