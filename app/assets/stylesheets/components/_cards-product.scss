@@ -1,4 +1,4 @@
-.product-details {
+.product-name {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -7,24 +7,44 @@
   height: 120px;
   z-index: 1;
   padding: 10px;
-
-  :hover {
-    transform: translateY(-200px);
-    height: 200%;
-    transition: .9s;
-    // transform: rotate(360deg);
-  }
+  transition: all .7s ease-out;
+  text-align: center;
 
   h2 {
     margin: 30px 0;
     padding: 0;
     text-align: center;
-     
-    .job-title {
-        font-size: 1rem;
-        line-height: 2.5rem;
-        color: #333;
-        font-weight: 300;
-    }
   }
+}
+
+.product-description {
+  font-size: 20px;
+  font-weight: normal;
+  display: none;
+  color: #777777f2;
+  // transition: .8s ease-in;
+}
+
+.price {
+    position: relative;
+    bottom: 25%;
+}
+
+.product-name:hover {
+  height: 100%;
+  transition: .9s;
+  border-radius: 5px; 
+    .product-description {
+      transition-property: display;
+      transition-delay: 1s;
+      display: contents;
+    }
+
+   .price {
+    transform: translateY(-50px);
+    transition: .9s;
+    position: relative;
+    bottom: -50%;
+   }
+
 }
