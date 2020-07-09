@@ -7,7 +7,7 @@
   height: 120px;
   z-index: 1;
   padding: 10px;
-  transition: all .7s ease-out;
+  transition: all .4s ease-out;
   text-align: center;
 
   h2 {
@@ -22,7 +22,7 @@
   font-weight: normal;
   display: none;
   color: #777777f2;
-  // transition: .8s ease-in;
+  // overflow: hidden;
 }
 
 .price {
@@ -31,20 +31,23 @@
 }
 
 .product-name:hover {
-  height: 100%;
-  transition: .9s;
-  border-radius: 5px; 
+  height: 90%;
+  // transition: .9s;
+  border-radius: 40px 40px 5px 5px; 
     .product-description {
-      transition-property: display;
-      transition-delay: 1s;
       display: contents;
     }
 
    .price {
     transform: translateY(-50px);
-    transition: .9s;
+    // transition: .9s;
     position: relative;
-    bottom: -50%;
+    bottom: -40%;
    }
 
+}
+
+// Phones
+@media (max-width: 375px) {
+  
 }
