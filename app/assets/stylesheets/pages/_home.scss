@@ -92,8 +92,21 @@
     margin-top: 0;
     background-size: cover;
     background-position: top;
+    width: 101%;
   }
-  .home-products h1 {
-    padding: 24px 50px;
+  .home-products {
+    width: 101%;
+    h1 {
+      padding: 24px 50px;
+    }
+  }
+  .home-staff {
+    height: 216vh;
+    background-image: none;
+    background-color: black;
+    width: 101%;
+      h1 {
+        padding-bottom: 172px;
+      }
   }
 }

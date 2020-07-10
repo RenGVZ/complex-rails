@@ -74,17 +74,12 @@
 }
 
 @media (max-width: 375px) {
-  .home-staff {
-    height: 216vh;
-    background-image: none;
-    background-color: black;
-  }
   .barber-pic {
     margin-bottom: 200px;
   }
   .details {
     bottom: -66px;
-    width: 215%;
+    // width: 215%;
     left: auto;
     height: 100px;
   }

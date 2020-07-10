@@ -48,8 +48,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  position: absolute;
-  left: 8%;
+  // position: relative;
+  width: 100%;
+  // left: 8%;
 }
 
 // Smallest device
