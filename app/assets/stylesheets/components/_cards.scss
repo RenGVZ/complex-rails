@@ -37,7 +37,6 @@
   transition: all .9s;
     img {
       filter: grayscale(0.90);
-      // opacity: 0.8;
     }
 
 }
@@ -48,16 +47,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  // position: relative;
   width: 100%;
-  // left: 8%;
 }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
     grid-template-columns: 1fr;
-    left: 10%;
+    // left: 10%;
   }
   .card-category {
     height: 200px;
