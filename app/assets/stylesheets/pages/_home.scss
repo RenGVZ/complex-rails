@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
   background-image: asset_url("allef-vinicius-IvQeAVeJULw-unsplash.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 110vh;
   margin-top: -80px;
@@ -33,11 +36,10 @@
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1),
   rgba(0, 0, 0, 0.4)), asset_url("products.jpg");
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
     h1 {
       padding-top: 104px;
       padding-bottom: 40px;
@@ -52,12 +54,11 @@
 .home-staff {
   height: 130vh;
   background-image: asset_url("staff.jpg");
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-
+  
   h1 {
     padding-top: 104px;
     padding-bottom: 40px;

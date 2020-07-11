@@ -22,7 +22,7 @@
   font-weight: normal;
   display: none;
   color: #777777f2;
-  // overflow: hidden;
+  opacity: 0;
 }
 
 .price {
@@ -35,6 +35,8 @@
   // transition: .9s;
   border-radius: 40px 40px 5px 5px; 
     .product-description {
+      opacity: 1;
+      transition: 1s;
       display: contents;
     }
 
