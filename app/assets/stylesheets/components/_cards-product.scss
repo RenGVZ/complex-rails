@@ -10,6 +10,26 @@
   transition: all .4s ease-out;
   text-align: center;
 
+  background-image: linear-gradient(
+      to bottom,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.009) 11.7%,
+      hsla(0, 0%, 0%, 0.034) 22.1%,
+      hsla(0, 0%, 0%, 0.072) 31.2%,
+      hsla(0, 0%, 0%, 0.123) 39.4%,
+      hsla(0, 0%, 0%, 0.182) 46.6%,
+      hsla(0, 0%, 0%, 0.249) 53.1%,
+      hsla(0, 0%, 0%, 0.320) 58.9%,
+      hsla(0, 0%, 0%, 0.394) 64.3%,
+      hsla(0, 0%, 0%, 0.468) 69.3%,
+      hsla(0, 0%, 0%, 0.540) 74.1%,
+      hsla(0, 0%, 0%, 0.607) 78.8%,
+      hsla(0, 0%, 0%, 0.668) 83.6%,
+      hsla(0, 0%, 0%, 0.721) 88.7%,
+      hsla(0, 0%, 0%, 0.762) 94.1%,
+      hsla(0, 0%, 0%, 0.790) 100%
+    );
+
   h2 {
     text-align: center;
     padding: 0;
@@ -18,9 +38,29 @@
 }
 
 .product-info:hover {
-  height: 90%;
-  // transition: .9s;
+  height: 100%;
+  transition: .9s;
   border-radius: 5px; 
+  padding: 23px 45px 0px;
+  background-image: linear-gradient(
+      to bottom,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.009) 11.7%,
+      hsla(0, 0%, 0%, 0.034) 22.1%,
+      hsla(0, 0%, 0%, 0.072) 31.2%,
+      hsla(0, 0%, 0%, 0.123) 39.4%,
+      hsla(0, 0%, 0%, 0.182) 46.6%,
+      hsla(0, 0%, 0%, 0.249) 53.1%,
+      hsla(0, 0%, 0%, 0.320) 58.9%,
+      hsla(0, 0%, 0%, 0.394) 64.3%,
+      hsla(0, 0%, 0%, 0.468) 69.3%,
+      hsla(0, 0%, 0%, 0.540) 74.1%,
+      hsla(0, 0%, 0%, 0.607) 78.8%,
+      hsla(0, 0%, 0%, 0.668) 83.6%,
+      hsla(0, 0%, 0%, 0.721) 88.7%,
+      hsla(0, 0%, 0%, 0.762) 94.1%,
+      hsla(0, 0%, 0%, 0.790) 100%
+    );
     .product-description {
       opacity: 1;
       transition: 1s;
@@ -31,8 +71,9 @@
    .price {
     transform: translateY(-50px);
     // transition: .9s;
-    position: relative;
-    bottom: -50%;
+    position: absolute;
+    bottom: -10%;
+    left: 45%;
    }
 }
 
@@ -40,9 +81,9 @@
   font-size: 20px;
   font-weight: normal;
   display: none;
-  color: rgb(62, 62, 62);
+  color: #ffffff;
   opacity: 0;
-  text-shadow: 2px 1px rgb(165, 165, 165);
+  text-shadow: 2px 1px black;
 }
 
 .price {

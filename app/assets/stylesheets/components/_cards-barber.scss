@@ -74,16 +74,19 @@
 
 @media (max-width: 375px) {
   .barber-pic {
-    margin-bottom: 200px;
+    margin-bottom: 90px;
+    height: auto;
+    width: auto;
+    margin-left: 0;
   }
   .details {
-    bottom: -66px;
+    bottom: 0px;
     // width: 215%;
     left: auto;
     height: 100px;
   }
   .social-icons {
-    top: 18%;
-    left: 38%;
+    top: 36%;
+    left: 45%;
   }
 }
