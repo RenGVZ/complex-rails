@@ -72,9 +72,13 @@
   }
 }
 
+.details:hover {
+  background: rgba(55, 55, 55, 0.68);
+}
+
 @media (max-width: 375px) {
   .barber-pic {
-    margin-bottom: 90px;
+    margin-bottom: 16px;
     height: auto;
     width: auto;
     margin-left: 0;

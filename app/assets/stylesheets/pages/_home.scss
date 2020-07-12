@@ -13,11 +13,9 @@
 }
 
 .home-landing h1 {
-  margin: 0;
+  // margin: 0;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
+  
 }
 
 .home-landing p {
@@ -30,6 +28,9 @@
 .tagline {
   color: white;
   text-align: center;
+  font-size: 32px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: bold;
 }
 
 .home-products {
@@ -41,12 +42,8 @@
   background-repeat: no-repeat;
   background-size: cover;
     h1 {
-      padding-top: 104px;
-      padding-bottom: 40px;
-      color: white;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-      font-size: 32px;
-      font-weight: bold;
+      padding-top: 60px;
+      padding-bottom: 50px;
     }
     
 }
@@ -60,21 +57,22 @@
   background-size: cover;
   
   h1 {
-    padding-top: 104px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 50px;
     color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    font-size: 32px;
-    font-weight: bold;
   }
 }
 
 .home-testamonials {
   height: 100vh;
-  background-color: #dcdcdc;
+  background-image: asset_url("testimonials-1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   h1 {
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 50px;
   }
 }
 
@@ -107,12 +105,18 @@
     }
   }
   .home-staff {
-    height: 216vh;
-    background-image: none;
-    background-color: black;
+    height: 233vh;
+    background-image: asset_url("staff.jpg");
     width: 101%;
       h1 {
-        padding-bottom: 104px;
+        // padding-bottom: 104px;
       }
+  }
+  .home-testamonials {
+    height: 200vh;
+    width: 101%;
+  }
+  .home-location {
+    width: 101%;
   }
 }
