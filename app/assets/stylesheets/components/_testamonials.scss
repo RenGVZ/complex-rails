@@ -1,7 +1,13 @@
 .quote {
   background-color: white;
-  border: 12px solid rgba(255, 255, 255, 0.68);
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
+}
+
+@media(max-width: 375px) {
+  .quote { 
+    width: 80%;
+    justify-self: center;
+  }
 }

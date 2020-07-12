@@ -10,19 +10,15 @@
   background-size: cover;
   height: 110vh;
   margin-top: -80px;
-}
-
-.home-landing h1 {
-  // margin: 0;
-  color: white;
-  
-}
-
-.home-landing p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    h1 {
+      color: white;
+    }
+    p {
+      font-size: 20px;
+      color: white;
+      opacity: .7;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
 }
 
 .tagline {
@@ -34,37 +30,37 @@
 }
 
 .home-products {
-  height: 100vh;
+  height: auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1),
   rgba(0, 0, 0, 0.4)), asset_url("products.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 80px;
     h1 {
-      padding-top: 60px;
       padding-bottom: 50px;
     }
     
 }
 
 .home-staff {
-  height: 130vh;
+  height: auto;
   background-image: asset_url("staff.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  padding-top: 40px;
+  padding-bottom: 80px;
   h1 {
-    padding-top: 60px;
     padding-bottom: 50px;
-    color: white;
   }
 }
 
 .home-testamonials {
-  height: 100vh;
+  height: auto;
   background-image: asset_url("testimonials-1.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -74,8 +70,9 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
   h1 {
-    // padding-top: 60px;
     padding-bottom: 50px;
   }
 }
@@ -88,36 +85,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 
 // Mobile 
 @media(max-width: 375px) {
   .home-landing {
-    height: 100vh;
+    height: 110vh;
     margin-top: 0;
     background-size: cover;
     background-position: top;
-    width: 101%;
+    width: auto;
   }
   .home-products {
-    width: 101%;
+    width: auto;
     h1 {
       padding: 24px 50px;
     }
   }
   .home-staff {
-    height: 233vh;
+    height: auto;
     background-image: asset_url("staff.jpg");
-    width: 101%;
+    width: auto;
   }
   .home-testamonials {
-    height: 200vh;
-    width: 101%;
+    height: auto;
+    width: auto;
   }
   .home-location {
-    width: 101%;
+    width: auto;
   }
 }
