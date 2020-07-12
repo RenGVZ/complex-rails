@@ -1,10 +1,21 @@
 .navbar-complex {
   justify-content: space-between;
-  background: transparent;
+  // background: transparent;
   h3 {
     margin-top: 14px;
     font-weight: bold;
   }
+  align-items: baseline;
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  overflow: visible;
+  // max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  // padding: 0 20px;
+
 }
 
 .navbar-complex .navbar-collapse {
@@ -17,21 +28,62 @@
 }
 
 .navbar {
-  padding: 0.5rem 2rem;
+  // padding: 0.5rem 2rem;
   color: white;
 }
 
 .navbar-nav {
-  font-size: 20px;
+  // font-size: 20px;
 }
 
 .nav-item {
-  padding: 0 14px 0 14px;
+  padding: 0 0 0 20px;
+  color: white;
+  text-decoration: none;
+  margin: 0 6px;
+  transition: .3s;
+  z-index: 1;
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 12px;
+    width: 100%;
+    height: 5px;
+    background-color: #dfe2ea;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    transition: .3s;
+  }
 }
 
-#clock {
-  padding-right: 28px;
+.nav-item:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0;
 }
+
+
+.nav-item:not(.is-active):hover { color: white; text-decoration: none; }
+
+.nav-indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  transition: .4s;
+  height: 5px;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
+  background-color: #dfe2ea;
+}
+
+// #clock {
+//   padding-right: 28px;
+// }
 
 // .dropdown {
 //   border: white 2px solid;
@@ -51,24 +103,26 @@
 
 @media(max-width: 375px) {
   .navbar-complex h3 {
-    color: black;
+    color: white;
   }
 
 
   .dropdown-toggle {
-    color: black;
+    color: white;
   }
 
   .dropdown-toggle:hover{
-    color: black;
+    color: white;
   }
 
   .nav-item {
-    color: black;
+    color: white;
   }
 
   .navbar-toggler {
     padding: 0.25rem 0;
+    background-color: white;
+    border-radius: 5px;
   }
 
   .show {
@@ -76,10 +130,17 @@
   }
 
   .show .navbar-nav {
-    flex-direction: row-reverse;
+    flex-direction: column;
   }
 
   .collapsing .navbar-nav {
-    flex-direction: row-reverse;
+    flex-direction: column;
+  }
+}
+@media(max-width: 414px){
+  .navbar-toggler {
+    padding: 0.25rem 0;
+    background-color: white;
+    border-radius: 5px;
   }
 }
