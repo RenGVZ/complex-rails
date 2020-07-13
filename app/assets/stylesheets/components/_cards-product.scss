@@ -73,9 +73,9 @@
    .price {
     transform: translateY(-50px);
     // transition: .9s;
-    position: absolute;
-    bottom: -10%;
-    left: 45%;
+    position: relative;
+    bottom: -20%;
+    // left: 45%;
    }
 }
 
@@ -92,5 +92,13 @@
 
 // Phones
 @media (max-width: 375px) {
-  
+  .product-info:hover {
+    .price {
+      bottom: -40%;
+    }
+    .product-description {
+    display: none;
+    opacity:0;
+    }
+  }
 }

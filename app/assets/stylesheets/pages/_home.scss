@@ -80,7 +80,7 @@
 
 .home-location {
   height: 100vh;
-  background-image: asset_url("map.jpg");
+  background-color: rgba(0, 0, 0, 0.83);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -88,6 +88,13 @@
   align-items: center;
   padding-top: 40px;
   padding-bottom: 80px;
+
+  .bottom-complex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
 }
 
 
@@ -117,5 +124,9 @@
   }
   .home-location {
     width: auto;
+    height: 85vh;
+    h3 {
+      font-size: 1.2rem;
+    }
   }
 }
