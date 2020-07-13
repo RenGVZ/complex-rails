@@ -13,7 +13,7 @@
   overflow: hidden;
 
   height: 400px;
-  width: 390px;
+  width: 340px;
 
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -82,13 +82,21 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: fit-content;
+  }
+}
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
