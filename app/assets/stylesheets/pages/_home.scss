@@ -130,3 +130,15 @@
     }
   }
 }
+
+@media (min-width: 992px) {
+  .home-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-staff {
+    height: 100vh;
+  }
+}

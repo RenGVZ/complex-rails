@@ -35,8 +35,8 @@
       <div class="row">
         <div class="cards">   
           <% @barbers.each do |barber| %>  
-            <div class="col card-category barber-pic">
-              <%= cl_image_tag barber.photo.key, height: 400, width: 390, crop: :fill %>
+            <div class="col-12 card-category barber-pic">
+              <%= cl_image_tag barber.photo.key, height: 400, width: 340, crop: :fill %>
               <ul class="social-icons">
                 <li>
                   <a href="<%= barber.instagram %>" target="blank">
@@ -85,7 +85,7 @@
           </div>
 
           <div class="quote">
-            <p class="text-left">"I took my son to get his hair cut and ced did an incredible job! My little boy was very nervous but ced went above and beyond to insure my son was comfortable and happy with his first mohawk 😎"</p>
+            <p class="text-left">"I took my son to get his hair cut and ced did an incredible job! My little boy was very nervous but ced went above and beyond to insure my son was comfortable and happy with his first mohawk"</p>
             <p class="text-right">Monique O.</p>
           </div>
 
