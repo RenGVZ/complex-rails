@@ -43,9 +43,9 @@
   margin: 0 6px;
   transition: .3s;
   z-index: 1;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Teko', sans-serif;
   position: relative;
-
+  font-size: 20px;
 
   &:before {
     content: "";
@@ -142,5 +142,9 @@
     padding: 0.25rem 0;
     background-color: white;
     border-radius: 5px;
+  }
+
+  .navbar-expand-sm {
+    background-color: black;
   }
 }

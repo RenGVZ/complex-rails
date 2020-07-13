@@ -7,7 +7,6 @@
   opacity: 0.6;
   transition: opacity 0.3s ease;
 }
-
 .btn-ghost:hover {
   color: black;
   opacity: 0.9;
@@ -15,11 +14,32 @@
   box-shadow: grey 2px;
 }
 
+.btn-ghost-lg {
+  color: white;
+  border: 1px solid white;
+  padding: 8px 24px;
+  border-radius: 5px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  width: 15%;
+  font-size: 24px;
+}
+.btn-ghost-lg:hover {
+  color: black;
+  opacity: 0.9;
+  background-color: white;
+  box-shadow: grey 2px;
+ }
+
 @media (max-width: 375px) {
   .btn-ghost {
     color: black;
     opacity: 0.9;
     background-color: white;
     box-shadow: grey 2px;
+  }
+  .btn-ghost-lg {
+    width: auto;
   }
 }
