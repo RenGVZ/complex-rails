@@ -32,12 +32,13 @@
 
 .home-products {
   height: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1),
-  rgba(0, 0, 0, 0.4)), asset_url("products.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.1),
+  // rgba(0, 0, 0, 0.4)), asset_url("products.jpg");
+  // background-attachment: fixed;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: rgb(220, 220, 220);
   padding-top: 40px;
   padding-bottom: 80px;
     h1 {
@@ -48,7 +49,7 @@
 
 .home-staff {
   height: auto;
-  background-image: asset_url("staff.jpg");
+  background-color: #292929;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -115,7 +116,7 @@
   }
   .home-staff {
     height: auto;
-    background-image: asset_url("staff.jpg");
+    // background-image: asset_url("staff.jpg");
     width: auto;
   }
   .home-testamonials {
