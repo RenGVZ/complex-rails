@@ -26,7 +26,7 @@
   color: white;
   text-align: center;
   font-size: 92px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 5px 6px 4px rgba(0,0,0,.5);
   font-weight: 100;
 }
 
@@ -64,6 +64,7 @@
 .home-testamonials {
   height: auto;
   background-image: asset_url("testimonials-1.jpg");
+    filter: grayscale(0.90);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,6 +96,9 @@
     flex-direction: column;
     text-align: center;
     color: white;
+  }
+  h3 {
+    text-decoration: none;
   }
 }
 

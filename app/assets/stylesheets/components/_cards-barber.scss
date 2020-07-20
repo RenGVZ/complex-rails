@@ -77,10 +77,14 @@
 }
 
 @media (max-width: 375px) {
+  .card-category {
+    // justify-self: center;
+  }
   .barber-pic {
     height: auto;
     width: auto;
     margin-left: 0;
+    // justify-self: center;
   }
   .details {
     bottom: 0px;

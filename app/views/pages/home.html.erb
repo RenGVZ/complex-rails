@@ -35,7 +35,7 @@
       <div class="row">
         <div class="cards">   
           <% @barbers.each do |barber| %>  
-            <div class="col-12 card-category barber-pic">
+            <div class="col card-category barber-pic">
               <%= cl_image_tag barber.photo.key, height: 400, width: 340, crop: :fill %>
               <ul class="social-icons">
                 <li>
@@ -50,7 +50,7 @@
                 </li>
               </ul>
               <div class="book-btn">
-                <a href="<%= barber.booksy %>" target="blank" class="btn btn-ghost">Book now</a>
+                <a href="<%= barber.booksy %>" target="blank" class="btn btn-ghost barber-btn">Book now</a>
               </div>
               <div class="details">
                 <h2><%= barber.name %></h2>
