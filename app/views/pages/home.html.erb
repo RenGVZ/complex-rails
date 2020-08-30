@@ -14,7 +14,7 @@
       <div class="row">
         <div class="cards">
           <% @products.each do |product| %>
-            <div class="col card-category">
+            <div class="col card-category" style="padding-right: 0; padding-left: 0">
             <%= cl_image_tag product.photo.key, height: 400, width: 390 %>
               <div class="product-info">
                 <h2><%= product.name %></h2>
