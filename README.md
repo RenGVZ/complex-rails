@@ -1,24 +1,7 @@
-# README
+A Ruby-On-Rails website made to boost a client's exposure online.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Using figma to create a mockup I then proceded to code the entire site in HTML/CSS and Javascript, using Ruby and Active Record's database functionality when necessary.
 
-Things you may want to cover:
+While creating this project I honed in on sound design principles and made responsiveness a key feature of the website.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This was my introduction to making stylish and visually-appealing freelance projects.
