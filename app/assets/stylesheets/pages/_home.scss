@@ -5,17 +5,17 @@
   align-items: center;
   background-image: asset_url("allef-vinicius-IvQeAVeJULw-unsplash.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: inherit;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 110vh;
+  height: 112vh;
   margin-top: -80px;
     h1 {
       color: white;
       font-size: 91px;
     }
     p {
-      font-size: 20px;
+      font-size: 28px;
       color: white;
       opacity: .7;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
